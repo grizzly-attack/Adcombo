@@ -1,0 +1,36 @@
+body {
+	position: relative;
+  min-height: 100vh;
+  max-width: 100vw;
+  font-family: "Open Sans", "Arial", sans-serif;
+  min-width: 768px;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1108px;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

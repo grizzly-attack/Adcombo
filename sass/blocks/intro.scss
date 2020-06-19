@@ -1,0 +1,122 @@
+.intro {
+  background-color: #8c5d79;
+  padding: 60px 0;
+  padding-bottom: 112px;
+}
+
+.intro__list {
+  @include list-reset;
+  position: relative;
+  min-height: 355px;
+  z-index: 1;
+
+  font-family: "Myriad Pro", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.intro__cols {
+  float: left;
+  text-align: right;
+  width: calc(50% - 176px);
+
+  &--right {
+    float: right;
+    text-align: left;
+
+    .intro__item {
+      padding-left: 97px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 85px;
+        height: 85px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        left: 0;
+      }
+
+      &:nth-child(1) {
+        margin-left: -90px;
+      }
+
+      &:nth-child(2) {
+        margin-left: -60px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+      }
+
+      &:nth-child(3) {
+        margin-left: -90px;
+      }
+    }
+  }
+
+  &--left {
+    .intro__item {
+      padding-right: 97px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 87px;
+        height: 87px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        right: 0;
+      }
+
+      &:nth-child(1) {
+        margin-right: -90px;
+      }
+
+      &:nth-child(2) {
+        margin-right: -60px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+      }
+
+      &:nth-child(3) {
+        margin-right: -90px;
+      }
+    }
+  }
+}
+
+.intro__item {
+  position: relative;
+  margin: 0;
+  height: 87px;
+  line-height: 87px;
+}
+
+.intro__img-container {
+  width: 280px;
+  height: 110px;
+  background-color: #5a9aa8;
+}
+
+.intro__container {
+  position: relative;
+  margin-top: 117px;
+}
+
+.intro__round-img-container {
+  position: absolute;
+  margin: 0;
+  width: 348px;
+  height: 348px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #5a9aa8;
+  border-radius: 50%
+}
+
+.intro__item-inner {
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 10px;
+  line-height: 1.25;
+}
